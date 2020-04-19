@@ -1,7 +1,8 @@
 data = {
   "positive": {
     "description": "Feelings when your needs are satisfied.",
-    "feelings": [{
+    "feelings": [
+      {
         "name": "affectionate",
         "values": [
           "compassionate",
@@ -30,13 +31,126 @@ data = {
           "stimulated"
         ]
       },
+      {
+        "name": "hopeful",
+        "values": [
+          "expectant",
+          "encouraged",
+          "optimistic"
+        ]
+      },
+      {
+        "name": "confident",
+        "values": [
+          "empowered",
+          "open",
+          "proud",
+          "safe",
+          "secure"
+        ]
+      },
+      {
+          "name": "excited",
+          "values": [
+          "amazed",
+          "animated",
+          "ardent",
+          "aroused",
+          "astonished",
+          "dazzled",
+          "eager",
+          "energetic",
+          "enthusiastic",
+          "giddy",
+          "invigorated",
+          "lively",
+          "passionate",
+          "surprised",
+          "vibrant"
+        ]
+      },
+      {
+          "name": "grateful",
+          "values": [
+          "appreciative",
+          "moved",
+          "thankful",
+          "touched"
+        ]
+      },
+      {
+          "name": "inspired",
+          "values": [
+          "amazed",
+          "awed",
+          "wonder"
+        ]
+      },
+      {
+          "name": "joyful",
+          "values": [
+          "amused",
+          "delighted",
+          "glad",
+          "happy",
+          "jubilant",
+          "pleased",
+          "tickled"
+        ]
+      },
+      {
+          "name": "exhilarated",
+          "values": [
+          "blissful",
+          "ecstatic",
+          "elated",
+          "enthralled",
+          "exuberant",
+          "radiant",
+          "rapturous",
+          "thrilled"
+        ]
+      },
+      {
+          "name": "peaceful",
+          "values": [
+          "calm",
+          "clear headed",
+          "comfortable",
+          "centered",
+          "content",
+          "equanimous",
+          "fulfilled",
+          "mellow",
+          "quiet",
+          "relaxed",
+          "relieved",
+          "satisfied",
+          "serene",
+          "still",
+          "tranquil",
+          "trusting"
+        ]
+      },
+      {
+          "name": "refreshed",
+          "values": [
+          "enlivened",
+          "rejuvenated",
+          "renewed",
+          "rested",
+          "restored",
+          "revived"
+        ]
+      }
     ]
   },
   "negative": {
-    "description": "Feelings when your needs are not satisfied.",
-    "feelings": [{
-        "name": "afraid",
-        "values": [
+    "description": "Feelings when your needs are satisfied.",
+    "feelings": [
+      {
+          "name": "afraid",
+          "values": [
           "apprehensive",
           "dread",
           "foreboding",
@@ -52,8 +166,9 @@ data = {
         ]
       },
       {
-        "name": "annoyed",
-        "values": [
+
+          "name": "annoyed",
+          "values": [
           "aggravated",
           "dismayed",
           "disgruntled",
@@ -63,6 +178,193 @@ data = {
           "impatient",
           "irritated",
           "irked"
+        ]
+      },
+      {
+          "name": "angry",
+          "values": [
+          "enraged",
+          "furious",
+          "incensed",
+          "indignant",
+          "irate",
+          "livid",
+          "outraged",
+          "resentful"
+        ]
+      },
+      {
+          "name": "aversion",
+          "values": [
+          "animosity",
+          "appalled",
+          "contempt",
+          "disgusted",
+          "dislike",
+          "hate",
+          "horrified",
+          "hostile",
+          "repulsed"
+        ]
+      },
+      {
+          "name": "confused",
+          "values": [
+          "ambivalent",
+          "baffled",
+          "bewildered",
+          "dazed",
+          "hesitant",
+          "lost",
+          "mystified",
+          "perplexed",
+          "puzzled",
+          "torn"
+        ]
+      },
+      {
+          "name": "disconnected",
+          "values": [
+          "alienated",
+          "aloof",
+          "apathetic",
+          "bored",
+          "cold",
+          "detached",
+          "distant",
+          "distracted",
+          "indifferent",
+          "numb",
+          "removed",
+          "uninterested",
+          "withdrawn"
+        ]
+      },
+      {
+          "name": "disquiet",
+          "values": [
+          "agitated",
+          "alarmed",
+          "discombobulated",
+          "disconcerted",
+          "disturbed",
+          "perturbed",
+          "rattled",
+          "restless",
+          "shocked",
+          "startled",
+          "surprised",
+          "troubled",
+          "turbulent",
+          "turmoil",
+          "uncomfortable",
+          "uneasy",
+          "unnerved",
+          "unsettled",
+          "upset"
+        ]
+      },
+      {
+          "name": "embarrassed",
+          "values": [
+          "ashamed",
+          "chagrined",
+          "flustered",
+          "guilty",
+          "mortified",
+          "self-conscious"
+        ]
+      },
+      {
+          "name": "fatigue",
+          "values": [
+          "beat",
+          "burnt out",
+          "depleted",
+          "exhausted",
+          "lethargic",
+          "listless",
+          "sleepy",
+          "tired",
+          "weary",
+          "worn out"
+        ]
+      },
+      {
+          "name": "pain",
+          "values": [
+          "agony",
+          "anguished",
+          "bereaved",
+          "devastated",
+          "grief",
+          "heartbroken",
+          "hurt",
+          "lonely",
+          "miserable",
+          "regretful",
+          "remorseful"
+        ]
+      },
+      {
+          "name": "sad",
+          "values": [
+          "depressed",
+          "dejected",
+          "despair",
+          "despondent",
+          "disappointed",
+          "discouraged",
+          "disheartened",
+          "forlorn",
+          "gloomy",
+          "heavy hearted",
+          "hopeless",
+          "melancholy",
+          "unhappy",
+          "wretched"
+        ]
+      },
+      {
+          "name": "tense",
+          "values": [
+          "anxious",
+          "cranky",
+          "distressed",
+          "distraught",
+          "edgy",
+          "fidgety",
+          "frazzled",
+          "irritable",
+          "jittery",
+          "nervous",
+          "overwhelmed",
+          "restless",
+          "stressed out"
+        ]
+      },
+      {
+          "name": "vulnerable",
+          "values": [
+          "fragile",
+          "guarded",
+          "helpless",
+          "insecure",
+          "leery",
+          "reserved",
+          "sensitive",
+          "shaky"
+        ]
+      },
+      {
+          "name": "yearning",
+          "values": [
+          "envious",
+          "jealous",
+          "longing",
+          "nostalgic",
+          "pining",
+          "wistful"
         ]
       }
     ]

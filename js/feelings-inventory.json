@@ -4,7 +4,8 @@
     "description": "Feelings when your needs are satisfied.",
     "feelings": [
       {
-        "affectionate": [
+        "name": "affectionate",
+        "values": [
           "compassionate",
           "friendly",
           "loving",
@@ -15,7 +16,8 @@
         ]
       },
       {
-        "engaged": [
+        "name": "engaged",
+        "values": [
           "absorbed",
           "alert",
           "curious",
@@ -31,14 +33,16 @@
         ]
       },
       {
-        "hopeful": [
+        "name": "hopeful",
+        "values": [
           "expectant",
           "encouraged",
           "optimistic"
         ]
       },
       {
-        "confident": [
+        "name": "confident",
+        "values": [
           "empowered",
           "open",
           "proud",
@@ -47,7 +51,8 @@
         ]
       },
       {
-        "excited": [
+          "name": "excited",
+          "values": [
           "amazed",
           "animated",
           "ardent",
@@ -66,7 +71,8 @@
         ]
       },
       {
-        "grateful": [
+          "name": "grateful",
+          "values": [
           "appreciative",
           "moved",
           "thankful",
@@ -74,14 +80,16 @@
         ]
       },
       {
-        "inspired": [
+          "name": "inspired",
+          "values": [
           "amazed",
           "awed",
           "wonder"
         ]
       },
       {
-        "joyful": [
+          "name": "joyful",
+          "values": [
           "amused",
           "delighted",
           "glad",
@@ -92,7 +100,8 @@
         ]
       },
       {
-        "exhilarated": [
+          "name": "exhilarated",
+          "values": [
           "blissful",
           "ecstatic",
           "elated",
@@ -104,7 +113,8 @@
         ]
       },
       {
-        "peaceful": [
+          "name": "peaceful",
+          "values": [
           "calm",
           "clear headed",
           "comfortable",
@@ -124,7 +134,8 @@
         ]
       },
       {
-        "refreshed": [
+          "name": "refreshed",
+          "values": [
           "enlivened",
           "rejuvenated",
           "renewed",
@@ -139,7 +150,8 @@
     "description": "Feelings when your needs are satisfied.",
     "feelings": [
       {
-        "afraid": [
+          "name": "afraid",
+          "values": [
           "apprehensive",
           "dread",
           "foreboding",
@@ -155,7 +167,9 @@
         ]
       },
       {
-        "annoyed": [
+
+          "name": "annoyed",
+          "values": [
           "aggravated",
           "dismayed",
           "disgruntled",
@@ -168,7 +182,8 @@
         ]
       },
       {
-        "angry": [
+          "name": "angry",
+          "values": [
           "enraged",
           "furious",
           "incensed",
@@ -180,7 +195,8 @@
         ]
       },
       {
-        "aversion": [
+          "name": "aversion",
+          "values": [
           "animosity",
           "appalled",
           "contempt",
@@ -193,7 +209,8 @@
         ]
       },
       {
-        "confused": [
+          "name": "confused",
+          "values": [
           "ambivalent",
           "baffled",
           "bewildered",
@@ -207,7 +224,8 @@
         ]
       },
       {
-        "disconnected": [
+          "name": "disconnected",
+          "values": [
           "alienated",
           "aloof",
           "apathetic",
@@ -224,7 +242,8 @@
         ]
       },
       {
-        "disquiet": [
+          "name": "disquiet",
+          "values": [
           "agitated",
           "alarmed",
           "discombobulated",
@@ -247,7 +266,8 @@
         ]
       },
       {
-        "embarrassed": [
+          "name": "embarrassed",
+          "values": [
           "ashamed",
           "chagrined",
           "flustered",
@@ -257,7 +277,8 @@
         ]
       },
       {
-        "fatigue": [
+          "name": "fatigue",
+          "values": [
           "beat",
           "burnt out",
           "depleted",
@@ -271,7 +292,8 @@
         ]
       },
       {
-        "pain": [
+          "name": "pain",
+          "values": [
           "agony",
           "anguished",
           "bereaved",
@@ -286,7 +308,8 @@
         ]
       },
       {
-        "sad": [
+          "name": "sad",
+          "values": [
           "depressed",
           "dejected",
           "despair",
@@ -304,7 +327,8 @@
         ]
       },
       {
-        "tense": [
+          "name": "tense",
+          "values": [
           "anxious",
           "cranky",
           "distressed",
@@ -321,7 +345,8 @@
         ]
       },
       {
-        "vulnerable": [
+          "name": "vulnerable",
+          "values": [
           "fragile",
           "guarded",
           "helpless",
@@ -333,7 +358,8 @@
         ]
       },
       {
-        "yearning": [
+          "name": "yearning",
+          "values": [
           "envious",
           "jealous",
           "longing",

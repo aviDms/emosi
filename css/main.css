@@ -110,6 +110,12 @@ textarea {
   display: none !important;
 }
 
+.button {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+}
+
 /*
 * Hide only visually, but have it available for screen readers:
 * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility

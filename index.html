@@ -29,8 +29,9 @@
 
   <div id="app" class="container">
     <br>
+    
     <span v-bind:title="messageTooltip">
-      {{ feelingInventory.description }}
+      <h3>{{ feelingInventory.description }}</h3>
       <ul>
         <li v-for="feeling in feelingInventory.feelings">
           {{ feeling.name }}
@@ -42,7 +43,7 @@
         </li>
       </ul>
     </span>
-    <button type="button" class="btn btn-primary btn-lg btn-block" v-on:click="switchEmotions">
+    <button type="button" class="btn btn-primary btn-lg btn-block button" v-on:click="switchEmotions">
       See {{ type }} emotions
     </button>
   </div>
