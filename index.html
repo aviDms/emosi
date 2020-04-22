@@ -32,21 +32,24 @@
       <div class="container">
         <span class="display-4">emosi.app</span>
         <p class="lead">{{ category.title }}</p>
+        <p>{{ category.description }}</p>
         <hr class="my-4">
         <p v-scroll="handleScroll">
-          {{ scrollPosition }} <br>
+          <h4>{{ itemFocusFeeling }}</h4>
+          <h5>{{ subItemFocusFeeling.name }}</h5>
+          {{ subItemFocusFeeling.definition }}
+          <!-- {{ scrollPosition }} <br>
           {{ itemFocusScroll }} <br>
+          {{ subitemFocusScroll }} <br> -->
         </p>
       </div>
     </div>
-
-    <p class="text-dark">{{ category.description }}<p>
     <ul>
       <li v-for="item in category.items" class="text-dark">
         {{ item.name }}
         <ul>
           <li v-for="itemValue in item.values" class="text-dark">
-            {{ itemValue }}
+            {{ itemValue.name }}
           </li>
         </ul>
       </li>
