@@ -30,34 +30,40 @@
   <div id="app" class="container">
     <div class="jumbotron jumbotron-fluid sticky-top">
       <div class="container">
-      <span class="display-4">emosi.app</span>
-      <p class="lead">Feelings Inventory</p>
-      <hr class="my-4">
-      <p v-scroll="handleScroll">
-        {{ itemFocusFeeling }}
-        {{ scrollPosition }}
-        {{ itemFocusScroll }}
-      </p>
-    </div>
+        <span class="display-4">emosi.app</span>
+        <p class="lead">{{ category.title }}</p>
+        <hr class="my-4">
+        <p v-scroll="handleScroll">
+          {{ itemFocusFeeling }} - 
+          {{ scrollPosition }} - 
+          {{ itemFocusScroll }} - 
+          {{ category.id }}
+        </p>
+      </div>
     </div>
 
-    <span v-bind:title="messageTooltip">
-      <h3>{{ feelingInventory.description }}</h3>
-      <ul>
-        <li v-for="feeling in feelingInventory.feelings">
-          {{ feeling.name }}
-          <ul>
-            <li v-for="emotion in feeling.values">
-              {{ emotion }}
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </span>
+    <p class="text-dark">{{ category.description }}<p>
+    <ul>
+      <li v-for="item in category.items" class="text-dark">
+        {{ item.name }}
+        <ul>
+          <li v-for="itemValue in item.values" class="text-dark">
+            {{ itemValue }}
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p class="text-secondary">
+      (c) 2005 by Center for Nonviolent Communication, reach by
+      <a href="www.cnvc.org">website</a>,
+      <a href="cnvc@cnvc.org">email</a> or 
+      phone: +1.505.244.4041
+    </p>
+
     <div class="button">
-      <button type="button" class="btn btn-lg btn-block" v-on:click="switchEmotions" 
-      v-bind:class="btnClass">
-        See {{ type }} emotions
+      <button type="button" class="btn btn-lg btn-block btn-primary" v-on:click="switchEmotions">
+        See {{ nextCategory }}
       </button>
     </div>
   </div>

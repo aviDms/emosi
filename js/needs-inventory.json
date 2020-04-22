@@ -1,0 +1,122 @@
+{
+  "needs": {
+    "title": "Needs Inventory",
+    "description": "The following list of needs is neither exhaustive nor definitive. It is meant as a starting place to support anyone who wishes to engage in a process of deepening self-discovery and to facilitate greater understanding and connection between people.",
+    "items": [
+      {
+        "name": "connection",
+        "values": [
+          "acceptance",
+          "affection",
+          "appreciation",
+          "belonging",
+          "cooperation",
+          "communication",
+          "closeness",
+          "community",
+          "companionship",
+          "compassion",
+          "consideration",
+          "consistency",
+          "empathy",
+          "inclusion",
+          "intimacy",
+          "love",
+          "mutuality",
+          "nurturing",
+          "respect",
+          "self-respect",
+          "safety",
+          "security",
+          "stability",
+          "support",
+          "to know and be known",
+          "to see and be seen",
+          "to understand and",
+          "be understood",
+          "trust",
+          "warmth"
+        ]
+      },
+      {
+        "name": "physical well-being",
+        "values": [
+          "air",
+          "food",
+          "movement",
+          "exercise",
+          "rest",
+          "sleep",
+          "sexual expression",
+          "safety",
+          "shelter",
+          "touch",
+          "water"
+        ]
+      },
+      {
+        "name": "honesty",
+        "values": [
+          "authenticity",
+          "integrity",
+          "presence"
+        ]
+      },
+      {
+        "name": "play",
+        "values": [
+          "joy",
+          "humor"
+        ]
+      },
+      {
+        "name": "peace",
+        "values": [
+          "beauty",
+          "communion",
+          "ease",
+          "equality",
+          "harmony",
+          "inspiration",
+          "order"
+        ]
+      },
+      {
+        "name": "autonomy",
+        "values": [
+          "choice",
+          "freedom",
+          "independence",
+          "space",
+          "spontaneity"
+        ]
+      },
+      {
+        "name": "meaning",
+        "values": [
+          "awareness",
+          "celebration of life",
+          "challenge",
+          "clarity",
+          "competence",
+          "consciousness",
+          "contribution",
+          "creativity",
+          "discovery",
+          "efficacy",
+          "effectiveness",
+          "growth",
+          "hope",
+          "learning",
+          "mourning",
+          "participation",
+          "purpose",
+          "self-expression",
+          "stimulation",
+          "to matter",
+          "understanding"
+        ]
+      }
+    ]
+  }
+}

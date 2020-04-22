@@ -1,8 +1,8 @@
-
 {
-  "positive": {
+  "feelings-positive": {
+    "title": "Feelings Inventory",
     "description": "Feelings when your needs are satisfied.",
-    "feelings": [
+    "items": [
       {
         "name": "affectionate",
         "values": [
@@ -146,9 +146,10 @@
       }
     ]
   },
-  "negative": {
+  "feelings-negative": {
+    "title": "Feelings Inventory",
     "description": "Feelings when your needs are satisfied.",
-    "feelings": [
+    "items": [
       {
           "name": "afraid",
           "values": [
