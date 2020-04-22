@@ -28,8 +28,19 @@
   <![endif]-->
 
   <div id="app" class="container">
-    <br>
-    
+    <div class="jumbotron jumbotron-fluid sticky-top">
+      <div class="container">
+      <span class="display-4">emosi.app</span>
+      <p class="lead">Feelings Inventory</p>
+      <hr class="my-4">
+      <p v-scroll="handleScroll">
+        {{ itemFocusFeeling }}
+        {{ scrollPosition }}
+        {{ itemFocusScroll }}
+      </p>
+    </div>
+    </div>
+
     <span v-bind:title="messageTooltip">
       <h3>{{ feelingInventory.description }}</h3>
       <ul>
@@ -43,9 +54,12 @@
         </li>
       </ul>
     </span>
-    <button type="button" class="btn btn-primary btn-lg btn-block button" v-on:click="switchEmotions">
-      See {{ type }} emotions
-    </button>
+    <div class="button">
+      <button type="button" class="btn btn-lg btn-block" v-on:click="switchEmotions" 
+      v-bind:class="btnClass">
+        See {{ type }} emotions
+      </button>
+    </div>
   </div>
 
   <!-- development version, includes helpful console warnings -->

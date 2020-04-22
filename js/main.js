@@ -146,7 +146,7 @@ data = {
     ]
   },
   "negative": {
-    "description": "Feelings when your needs are satisfied.",
+    "description": "Feelings when your needs are not satisfied.",
     "feelings": [
       {
           "name": "afraid",
@@ -371,22 +371,46 @@ data = {
   }
 }
 
+Vue.directive('scroll', {
+  inserted: function (el, binding) {
+    let f = function (evt) {
+      if (binding.value(evt, el)) {
+        window.removeEventListener('scroll', f)
+      }
+    }
+    window.addEventListener('scroll', f)
+  }
+})
+
 var app = new Vue({
   el: '#app',
   data: {
-    type: 'positive',
+    type: 'negative',
+    scrollPosition: 0,
+    itemFocusScroll: 0,
+    btnClass: 'btn-primary',
     messageTooltip: 'This is just a message',
-    feelingInventory: data.positive
+    feelingInventory: data.positive,
+    itemFocusFeeling: data.positive.feelings[0].name,
   },
   methods: {
     switchEmotions: function () {
       if (this.type === 'positive') {
         this.type = 'negative'
-        this.feelingInventory = data.negative
+        this.feelingInventory = data.positive,
+        this.btnClass ='btn-primary'
       } else {
         this.type = 'positive'
-        this.feelingInventory = data.positive
+        this.feelingInventory = data.negative,
+        this.btnClass = 'btn-primary'
       }
+    },
+    handleScroll: function (evt, el) {
+      this.feelingInventory.feelings.length
+      c = document.documentElement.scrollHeight
+      console.log(c, document.documentElement.scrollIntoView)
+      this.itemFocusScroll = c
+      this.scrollPosition = window.scrollY
     }
   }
 })
