@@ -30,30 +30,27 @@
   <div id="app" class="container">
     <div class="jumbotron jumbotron-fluid sticky-top">
       <div class="container">
-        <span class="display-4">emosi.app</span>
+        <!-- <span class="display-4">emosi.app</span> -->
         <p class="lead">{{ category.title }}</p>
         <p>{{ category.description }}</p>
         <hr class="my-4">
         <p v-scroll="handleScroll">
-          <h4>{{ itemFocusFeeling }}</h4>
-          <h5>{{ subItemFocusFeeling.name }}</h5>
-          <p>{{ subItemFocusFeeling.definition }}</p>
-          <!-- {{ scrollPosition }} <br>
-          {{ itemFocusScroll }} <br>
-          {{ subitemFocusScroll }} <br> -->
+          <h4>{{ itemFocusFeeling.category }}</h4>
+          <h5>{{ itemFocusFeeling.name }}</h5>
+          <p>{{ itemFocusFeeling.definition }}</p>
         </p>
       </div>
     </div>
     <ul class="focus-list">
       <li v-for="item in category.items" class="text-capitalize"
-      v-bind:class="{ 'focus-list': item.isActive }">
+      v-bind:class="{ 'font-weight-bold': item.isActive }">
         {{ item.name }}
-        <ul>
+        <!-- <ul>
           <li v-for="itemValue in item.values" 
           v-bind:class="{ 'font-weight-bold': itemValue.isActive }">
             {{ itemValue.name }}
           </li>
-        </ul>
+        </ul> -->
       </li>
     </ul>
 
