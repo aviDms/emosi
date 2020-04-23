@@ -28,9 +28,10 @@
   <![endif]-->
 
   <div id="app" class="container">
+    <!--
     <div class="jumbotron jumbotron-fluid sticky-top">
       <div class="container">
-        <!-- <span class="display-4">emosi.app</span> -->
+        <span class="display-4">emosi.app</span>
         <p class="lead">{{ category.title }}</p>
         <p>{{ category.description }}</p>
         <hr class="my-4">
@@ -41,9 +42,15 @@
         </p>
       </div>
     </div>
+  -->
+    <div v-scroll="handleScroll" class="focus-header">
+      <h4>{{ itemFocusFeeling.category }}</h4>
+      <h5>{{ itemFocusFeeling.name }}</h5>
+      <p>{{ itemFocusFeeling.definition }}</p>
+    </div>
+
     <ul class="focus-list">
-      <li v-for="item in category.items" class="text-capitalize"
-      v-bind:class="{ 'font-weight-bold': item.isActive }">
+      <li v-for="item in category.items" class="text-capitalize" v-bind:class="{ 'font-weight-bold': item.isActive }">
         {{ item.name }}
         <!-- <ul>
           <li v-for="itemValue in item.values" 
@@ -57,7 +64,7 @@
     <p class="text-secondary">
       (c) 2005 by Center for Nonviolent Communication, reach by
       <a href="www.cnvc.org">website</a>,
-      <a href="cnvc@cnvc.org">email</a> or 
+      <a href="cnvc@cnvc.org">email</a> or
       phone: +1.505.244.4041
     </p>
 
@@ -85,16 +92,16 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164280424-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164280424-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-164280424-1');
-</script>
-<!-- 
+    gtag('config', 'UA-164280424-1');
+  </script>
+  <!-- 
 <script>
   if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
 window.onmousewheel = document.onmousewheel = wheel;
@@ -142,4 +149,5 @@ if (end == null) {
 </script>  -->
 
 </body>
+
 </html>

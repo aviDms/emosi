@@ -117,8 +117,12 @@ textarea {
   border-bottom: 5px solid white;
 }
 
-.jumbotron {
+.focus-header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
   background-color:white !important;
+  border-bottom: 10px solid white;
 }
 
 /*
