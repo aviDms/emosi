@@ -1474,12 +1474,16 @@ var app = new Vue({
       var top = doc.scrollHeight - doc.clientHeight
       var split = top / nbOfItems
       this.scrollPosition = window.scrollY
+      // this.category.items[this.itemFocusScroll].isActive = false
       this.itemFocusScroll = Math.floor(window.scrollY / split)
+      // this.category.items[this.itemFocusScroll].isActive = true
       this.itemFocusFeeling = this.category.items[this.itemFocusScroll].name
       var nbOfSubItems = this.category.items[this.itemFocusScroll].values.length
       var subSplit = split / nbOfSubItems
       this.subitemFocusScroll = Math.floor((window.scrollY % split) / subSplit)
+      this.subItemFocusFeeling.isActive = false
       this.subItemFocusFeeling = this.category.items[this.itemFocusScroll].values[this.subitemFocusScroll]
+      this.subItemFocusFeeling.isActive = true
     }
   }
 })
